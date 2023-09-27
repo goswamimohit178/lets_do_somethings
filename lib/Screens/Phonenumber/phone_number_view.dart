@@ -1,4 +1,4 @@
-import 'package:collabact/Loader/loading_view.dart';
+import 'package:lets_do_somethings/Loader/loading_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
@@ -28,18 +28,18 @@ String LONGITUDE = "";
 String IP_ADDRESS = "";
 String PF_VERSION = "";
 
-
 class _PhoneNumberViewState extends State<PhoneNumberView> {
   bool loading = true;
 
   @override
   void initState() {
     loading = false;
- //   authToken();
+    //   authToken();
     // TODO: implement initState
     super.initState();
     _loadAuthToken();
   }
+
   //  ***** Method  created for get authToken  ***** //
   void _loadAuthToken() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -56,7 +56,6 @@ class _PhoneNumberViewState extends State<PhoneNumberView> {
       print(LONGITUDE);
       print(IP_ADDRESS);
       print(PF_VERSION);
-
     });
   }
 
@@ -65,11 +64,11 @@ class _PhoneNumberViewState extends State<PhoneNumberView> {
     return Scaffold(
       backgroundColor: Colors.white,
       body:
-      // AUTHTOKEN == null || AUTHTOKEN!.isEmpty
-      //     ? const Center(
-      //   child: CircularProgressIndicator(),
-      // ) :
-      SafeArea(
+          // AUTHTOKEN == null || AUTHTOKEN!.isEmpty
+          //     ? const Center(
+          //   child: CircularProgressIndicator(),
+          // ) :
+          SafeArea(
         child: SingleChildScrollView(
           child: Container(
             width: MediaQuery.of(context).size.width,
@@ -118,8 +117,8 @@ class _PhoneNumberViewState extends State<PhoneNumberView> {
                                     RegExp('[0-9]+')),
                               ],
                               decoration: InputDecoration(
-                               contentPadding:
-                                   EdgeInsets.only(bottom: 10.0, left: 10.0),
+                                contentPadding:
+                                    EdgeInsets.only(bottom: 10.0, left: 10.0),
                                 fillColor: Color(0xffedf0f7),
                                 focusColor: Color(0xffedf0f7),
                                 border: OutlineInputBorder(
@@ -139,7 +138,6 @@ class _PhoneNumberViewState extends State<PhoneNumberView> {
                               initialCountryCode: 'IN',
                               onChanged: (phone) {
                                 print(phone.completeNumber);
-
                               },
                               onCountryChanged: (country) {
                                 print('Country changed to: ' + country.name);
@@ -162,7 +160,8 @@ class _PhoneNumberViewState extends State<PhoneNumberView> {
                                 Text(
                                   'I accept the',
                                   style: TextStyle(
-                                      fontWeight: FontWeight.w600, fontSize: 12),
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 12),
                                 ),
                                 Text(
                                   ' Terms of Service ',
@@ -175,7 +174,8 @@ class _PhoneNumberViewState extends State<PhoneNumberView> {
                                 Text(
                                   'and',
                                   style: TextStyle(
-                                      fontWeight: FontWeight.w600, fontSize: 12),
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 12),
                                 ),
                                 Text(
                                   ' Privacy Policy.',
@@ -193,7 +193,7 @@ class _PhoneNumberViewState extends State<PhoneNumberView> {
                             height: 50,
                             child: ElevatedButton(
                               onPressed: _isAcceptTermsAndConditions
-                                  ? ()async {
+                                  ? () async {
                                       if (phoneController.text.isEmpty) {
                                         final snackbar = SnackBar(
                                             backgroundColor: Colors.red,
@@ -207,15 +207,26 @@ class _PhoneNumberViewState extends State<PhoneNumberView> {
                                             .showSnackBar(snackbar);
                                       } else {
                                         LoadingDialog.show(context);
-                                        final SharedPreferences prefs = await SharedPreferences.getInstance();
-                                        prefs.setString('mobileNo', phoneController.text.toString());
+                                        final SharedPreferences prefs =
+                                            await SharedPreferences
+                                                .getInstance();
+                                        prefs.setString('mobileNo',
+                                            phoneController.text.toString());
                                         signUpApi(context,
                                             mobilenumber:
                                                 phoneController.text.toString(),
-                                            AuthData: AUTHTOKEN.toString(),TokenType: TOKENTYPE.toString(),Latitude: LATITUDE, Longitude : LONGITUDE, IP:IP_ADDRESS, PF_VER :PF_VERSION);
-                                       await Navigator.push(context,
-                                            MaterialPageRoute(builder: (context) => OtpVerificationView()));
-                                       LoadingDialog.hide(context);
+                                            AuthData: AUTHTOKEN.toString(),
+                                            TokenType: TOKENTYPE.toString(),
+                                            Latitude: LATITUDE,
+                                            Longitude: LONGITUDE,
+                                            IP: IP_ADDRESS,
+                                            PF_VER: PF_VERSION);
+                                        await Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    OtpVerificationView()));
+                                        LoadingDialog.hide(context);
                                       }
                                     }
                                   : null,
@@ -248,5 +259,4 @@ class _PhoneNumberViewState extends State<PhoneNumberView> {
       ),
     );
   }
-
 }

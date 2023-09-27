@@ -33,7 +33,6 @@ Future<AuthTokenResponse> authToken() async {
       prefs.setString('token_type', authTokenResponse.tokenType.toString());
     } else {
       print("Data");
-      
     }
     return AuthTokenResponse.fromJson(jsonDecode(response.body));
   } else {
@@ -45,7 +44,7 @@ Future<AuthTokenResponse> authToken() async {
 //
 // Future<AuthTokenResponse>  authToken(BuildContext context) async {
 //   final http.Response response = await http.post(
-//     Uri.parse('https://collabact.com/API_DEMO/Auth2/token'),
+//     Uri.parse('https://lets_do_somethings.com/API_DEMO/Auth2/token'),
 //     headers: <String, String>{
 //       'Content-Type': 'application/json; charset=UTF-8',
 //     },

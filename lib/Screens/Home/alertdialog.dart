@@ -1,8 +1,8 @@
 import 'dart:io';
 
-import 'package:collabact/Screens/Home/home_view.dart';
-import 'package:collabact/Screens/Qrcode_aadharcard/qr_code_pancard.dart';
-import 'package:collabact/Screens/Qrcode_aadharcard/qrcode_view.dart';
+import 'package:lets_do_somethings/Screens/Home/home_view.dart';
+import 'package:lets_do_somethings/Screens/Qrcode_aadharcard/qr_code_pancard.dart';
+import 'package:lets_do_somethings/Screens/Qrcode_aadharcard/qrcode_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';

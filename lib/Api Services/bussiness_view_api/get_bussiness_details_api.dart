@@ -1,9 +1,9 @@
 // /*
 // import 'dart:convert';
-// import 'package:collabact/Screens/Bussiness/bussiness_details.dart';
+// import 'package:lets_do_somethings/Screens/Bussiness/bussiness_details.dart';
 // import 'package:flutter/material.dart';
 // import 'package:http/http.dart' as http;
-// import 'package:collabact/Api%20Response/bussiness_page_response/bussiness_details_response.dart';
+// import 'package:lets_do_somethings/Api%20Response/bussiness_page_response/bussiness_details_response.dart';
 // import 'package:shared_preferences/shared_preferences.dart';
 //
 // import '../api_main.dart';

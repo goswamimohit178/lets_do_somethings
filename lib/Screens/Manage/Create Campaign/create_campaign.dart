@@ -1,4 +1,4 @@
-import 'package:collabact/Screens/Manage/Create%20Campaign/preview_and_pay.dart';
+import 'package:lets_do_somethings/Screens/Manage/Create%20Campaign/preview_and_pay.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -20,7 +20,10 @@ class _CreateCampaignViewState extends State<CreateCampaignView> {
             isActive: _currentStep >= 0,
             label: Text(
               "Choose\nMessaage",
-              style: TextStyle(fontSize: 10, fontWeight: FontWeight.w600, color: Colors.blue),
+              style: TextStyle(
+                  fontSize: 10,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.blue),
             ),
             title: Text(''),
             content: ChooseMessage()),
@@ -28,7 +31,10 @@ class _CreateCampaignViewState extends State<CreateCampaignView> {
             isActive: _currentStep >= 1,
             label: Text(
               "Campagin \nDetails",
-              style: TextStyle(fontSize: 10, fontWeight: FontWeight.w600 ,color:_currentStep >= 1 ? Colors.blue :Colors.black ),
+              style: TextStyle(
+                  fontSize: 10,
+                  fontWeight: FontWeight.w600,
+                  color: _currentStep >= 1 ? Colors.blue : Colors.black),
             ),
             title: Text(''),
             content: CampaignDetails()),
@@ -36,7 +42,10 @@ class _CreateCampaignViewState extends State<CreateCampaignView> {
             isActive: _currentStep >= 2,
             label: Text(
               "Preview \n& Pay",
-              style: TextStyle(fontSize: 10, fontWeight: FontWeight.w600 , color:_currentStep >= 2 ? Colors.blue :Colors.black),
+              style: TextStyle(
+                  fontSize: 10,
+                  fontWeight: FontWeight.w600,
+                  color: _currentStep >= 2 ? Colors.blue : Colors.black),
             ),
             title: Text(''),
             content: PreviewAndPay())
@@ -45,15 +54,16 @@ class _CreateCampaignViewState extends State<CreateCampaignView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor:Color(0xffffffff) ,
-        appBar: AppBar( backgroundColor: Color(0xff058DD1),
+        backgroundColor: Color(0xffffffff),
+        appBar: AppBar(
+          backgroundColor: Color(0xff058DD1),
           elevation: 0,
           centerTitle: true,
           systemOverlayStyle: SystemUiOverlayStyle(
-            statusBarColor:  Color(0xff058DD1),
+            statusBarColor: Color(0xff058DD1),
             statusBarIconBrightness: Brightness.light,
           ),
-          title:Text(
+          title: Text(
             "Create Campaign",
             style: TextStyle(
               fontSize: 18,

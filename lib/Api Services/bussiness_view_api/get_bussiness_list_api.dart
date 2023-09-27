@@ -1,6 +1,6 @@
 // import 'dart:convert';
-// import 'package:collabact/Api%20Response/bussiness_page_response/bussiness_sigment_response.dart';
-// import 'package:collabact/Api%20Response/bussiness_page_response/get_%20bussiness_response.dart';
+// import 'package:lets_do_somethings/Api%20Response/bussiness_page_response/bussiness_sigment_response.dart';
+// import 'package:lets_do_somethings/Api%20Response/bussiness_page_response/get_%20bussiness_response.dart';
 // import 'package:flutter/material.dart';
 // import 'package:flutter/src/widgets/framework.dart';
 // import 'package:http/http.dart' as http;

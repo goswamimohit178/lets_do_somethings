@@ -1,7 +1,7 @@
-import 'package:collabact/Screens/Manage/manage_view.dart';
-import 'package:collabact/Screens/Orders/orders_view.dart';
-import 'package:collabact/Screens/Products/product_view.dart';
-import 'package:collabact/Screens/Profile/profile_view.dart';
+import 'package:lets_do_somethings/Screens/Manage/manage_view.dart';
+import 'package:lets_do_somethings/Screens/Orders/orders_view.dart';
+import 'package:lets_do_somethings/Screens/Products/product_view.dart';
+import 'package:lets_do_somethings/Screens/Profile/profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -18,13 +18,13 @@ class _MenuViewState extends State<MenuView> {
   late PageController pageController; //
 
   List<Widget> homeScreenItems = [
-    HomeView(),
+    const HomeView(),
     OrdersView(),
     ProductView(),
-    ManageView(),
+    const ManageView(),
     ProfileView(),
   ]; // for tabs animation
-  
+
   @override
   void initState() {
     super.initState();
@@ -49,15 +49,15 @@ class _MenuViewState extends State<MenuView> {
   }
 
   var primaryColor = Colors.blue;
-  var secondaryColor = Color(0xff717d96);
+  var secondaryColor = const Color(0xff717d96);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: PageView(
         physics: const NeverScrollableScrollPhysics(),
-        children: homeScreenItems,
         controller: pageController,
         onPageChanged: onPageChanged,
+        children: homeScreenItems,
       ),
       bottomNavigationBar: ClipRRect(
         borderRadius: const BorderRadius.only(
@@ -65,9 +65,9 @@ class _MenuViewState extends State<MenuView> {
           topLeft: Radius.circular(10),
         ),
         child: BottomNavigationBar(
-          selectedLabelStyle: TextStyle(color: Colors.white),
+          selectedLabelStyle: const TextStyle(color: Colors.white),
           selectedItemColor: Colors.blue,
-          unselectedItemColor: Color(0xff717d96),
+          unselectedItemColor: const Color(0xff717d96),
           backgroundColor: Colors.white,
           unselectedLabelStyle: TextStyle(color: Colors.white.withOpacity(.50)),
           type: BottomNavigationBarType.fixed,

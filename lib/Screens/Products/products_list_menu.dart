@@ -1,5 +1,5 @@
-import 'package:collabact/Screens/Products/orders_list.dart';
-import 'package:collabact/models/products/products_menulist.dart';
+import 'package:lets_do_somethings/Screens/Products/orders_list.dart';
+import 'package:lets_do_somethings/models/products/products_menulist.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:flutter/material.dart';

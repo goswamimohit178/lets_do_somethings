@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:collabact/Screens/Bussiness/bussiness_view.dart';
-import 'package:collabact/Screens/Categories/categories_details.dart';
-import 'package:collabact/Screens/Products/product.dart';
-import 'package:collabact/Screens/Products/products_list_menu.dart';
+import 'package:lets_do_somethings/Screens/Bussiness/bussiness_view.dart';
+import 'package:lets_do_somethings/Screens/Categories/categories_details.dart';
+import 'package:lets_do_somethings/Screens/Products/product.dart';
+import 'package:lets_do_somethings/Screens/Products/products_list_menu.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

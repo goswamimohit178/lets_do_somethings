@@ -1,10 +1,10 @@
 import 'dart:async';
 
-import 'package:collabact/Screens/Orders/orders_accepted.dart';
-import 'package:collabact/Screens/Orders/orders_all.dart';
-import 'package:collabact/Screens/Orders/orders_delievery.dart';
-import 'package:collabact/Screens/Orders/orders_pending.dart';
-import 'package:collabact/Screens/Orders/orders_shipped.dart';
+import 'package:lets_do_somethings/Screens/Orders/orders_accepted.dart';
+import 'package:lets_do_somethings/Screens/Orders/orders_all.dart';
+import 'package:lets_do_somethings/Screens/Orders/orders_delievery.dart';
+import 'package:lets_do_somethings/Screens/Orders/orders_pending.dart';
+import 'package:lets_do_somethings/Screens/Orders/orders_shipped.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

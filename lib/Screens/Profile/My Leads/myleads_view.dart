@@ -1,5 +1,5 @@
-import 'package:collabact/Screens/Profile/My%20Leads/my_leads_add_view.dart';
-import 'package:collabact/Screens/Profile/bussiness_enquiry.dart';
+import 'package:lets_do_somethings/Screens/Profile/My%20Leads/my_leads_add_view.dart';
+import 'package:lets_do_somethings/Screens/Profile/bussiness_enquiry.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

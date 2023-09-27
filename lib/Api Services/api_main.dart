@@ -1,6 +1,6 @@
 class ApiConstants {
 //  *******    BASE URL OF THE PROJECT *******   //
-  static String BASE_URL = 'https://collabact.com';
+  static String BASE_URL = 'https://lets_do_somethings.com';
 
 // ******  END POINT FOR GET THE AUTH TOKEN   ******** //
   static String AUTH_TOKEN = '/API_DEMO/Auth2/token';
@@ -10,7 +10,6 @@ class ApiConstants {
 
 // ******  END POINT FOR OTP VERIFICATION     ******** //
   static String OTP_VERIFICATION = '/API_demo/api/SalesPartner/OTPVerification';
-
 
   // ******  END POINT FOR CANDIDATE KYC DETAILS     ******** //
   static String CANDIDATE_KYC = '/API_demo/api/SalesPartner/CandidateKYCDetail';
@@ -22,22 +21,25 @@ class ApiConstants {
   static String GET_BUSSINESS_LIST = '/API_demo/api/Business/GetBusinesses';
 
   // ******  END POINT FOR GET BUSSINESS DETAILS    ******** //
-  static String GET_BUSSINESS_DETAILS = '/API_demo/api/Business/GetBusinessDetail';
+  static String GET_BUSSINESS_DETAILS =
+      '/API_demo/api/Business/GetBusinessDetail';
 
   // ******  END POINT FOR GET CUSTOMER LEAD RESOURCES     ******** //
-  static String GET_LEAD_RESOURCES = '/API_demo/api/SalesPartner/GetCustomerLeadResources';
+  static String GET_LEAD_RESOURCES =
+      '/API_demo/api/SalesPartner/GetCustomerLeadResources';
 
   // ******  END POINT FOR GET CANDIDATE CUSTOMER LEAD    ******** //
-  static String GET_CANDIDATE_CUSTOMER_LEAD = '/API_demo/api/SalesPartner/GetCandidateCustomerLead';
+  static String GET_CANDIDATE_CUSTOMER_LEAD =
+      '/API_demo/api/SalesPartner/GetCandidateCustomerLead';
 
- // ******  END POINT FOR GET CITY LIST    ******** //
+  // ******  END POINT FOR GET CITY LIST    ******** //
   static String GET_CITY_LIST = '/API_demo/api/SalesPartner/GetStateCities';
 
 // ******  END POINT FOR PRODUCT LIST ACCORDING TO BUSSINESS LIST    ******** //
-  static String GET_PRODUCT_LIST= '/API_demo/api/SalesPartner/GetBusinessProducts';
+  static String GET_PRODUCT_LIST =
+      '/API_demo/api/SalesPartner/GetBusinessProducts';
 
   // ******  END POINT FOR ADD AND EDIT CUSTOMER LEAD     ******** //
-  static String ADD_EDIT_CUSTOMER_LEAD= '/API_demo/api/SalesPartner/AddEditCustomerLead';
-
-
+  static String ADD_EDIT_CUSTOMER_LEAD =
+      '/API_demo/api/SalesPartner/AddEditCustomerLead';
 }

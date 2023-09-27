@@ -114,7 +114,7 @@ class _QrCodeViewState extends State<QrCodeView> {
                                   height: 10,
                                 ),
                                 Text(
-                                  "collabact.io/mystore123",
+                                  "lets_do_somethings.io/mystore123",
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     fontSize: 14,

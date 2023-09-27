@@ -1,4 +1,4 @@
-import 'package:collabact/Api%20Response/bussiness_page_response/bussiness_sigment_response.dart';
+import 'package:lets_do_somethings/Api%20Response/bussiness_page_response/bussiness_sigment_response.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 

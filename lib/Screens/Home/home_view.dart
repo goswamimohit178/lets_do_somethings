@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:collabact/Screens/Home/alertdialog.dart';
-import 'package:collabact/Screens/Products/product_view.dart';
-import 'package:collabact/Screens/Profile/profile_view.dart';
-import 'package:collabact/Screens/models/chart_model.dart';
+import 'package:lets_do_somethings/Screens/Home/alertdialog.dart';
+import 'package:lets_do_somethings/Screens/Products/product_view.dart';
+import 'package:lets_do_somethings/Screens/Profile/profile_view.dart';
+import 'package:lets_do_somethings/Screens/models/chart_model.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -26,10 +26,10 @@ String dropdownvalue = "Last Week";
 
 class _HomeViewState extends State<HomeView> {
   onShareLink(BuildContext context) async {
-    await Share.share('collabact.com/new\n This is according to the details',
-    subject: 'This is according to the details',
+    await Share.share(
+      'lets_do_somethings.com/new\n This is according to the details',
+      subject: 'This is according to the details',
     );
-
   }
 
   StreamSubscription? internetconnection;
@@ -77,7 +77,7 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return StreamBuilder<ConnectivityResult>(builder: (_, snapshot) {
       return Scaffold(
-        backgroundColor:Color(0xffffffff) ,
+        backgroundColor: Color(0xffffffff),
         body: RefreshIndicator(
           onRefresh: () {
             return Future.delayed(Duration(seconds: 1), () {
@@ -180,7 +180,7 @@ class _HomeViewState extends State<HomeView> {
                                               padding:
                                                   const EdgeInsets.all(8.0),
                                               child: Text(
-                                                "collabact.com/new",
+                                                "lets_do_somethings.com/new",
                                                 style: TextStyle(
                                                     color: Color(0xff058dd1),
                                                     fontSize: 17),
@@ -540,10 +540,9 @@ class _HomeViewState extends State<HomeView> {
                                                 Text(
                                                   "Add Address",
                                                   style: TextStyle(
-                                                      color: Color(0xff1787ba),
-                                                      fontWeight:
-                                                          FontWeight.w600,
-                                                      ),
+                                                    color: Color(0xff1787ba),
+                                                    fontWeight: FontWeight.w600,
+                                                  ),
                                                 )
                                               ],
                                             )),
@@ -608,9 +607,8 @@ class _HomeViewState extends State<HomeView> {
                                                 Text(
                                                   "Add Email",
                                                   style: TextStyle(
-                                                      color: Color(0xff1787ba),
-                                                      fontWeight:
-                                                          FontWeight.w600,
+                                                    color: Color(0xff1787ba),
+                                                    fontWeight: FontWeight.w600,
                                                   ),
                                                 )
                                               ],
@@ -734,7 +732,8 @@ class _HomeViewState extends State<HomeView> {
       );
     });
   }
- //* Internet Error Message 
+
+  //* Internet Error Message
   Widget errmsg(String text, bool show) {
     //error message widget.
     if (show == true) {

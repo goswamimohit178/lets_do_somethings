@@ -1,6 +1,6 @@
 import 'dart:developer';
 import 'dart:io';
-import 'package:collabact/Screens/Qrcode_aadharcard/aadhar_details.dart';
+import 'package:lets_do_somethings/Screens/Qrcode_aadharcard/aadhar_details.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
@@ -39,17 +39,13 @@ class _QRViewExampleState extends State<QRViewExample> {
         child: Column(
           children: <Widget>[
             Expanded(flex: 3, child: _buildQrView(context)),
-
             Expanded(
-              flex: 2,
-              child: 
-              Column(
-                children: [
-                  if (result != null)
-                  AadharDetails(result!.code),
-                ],
-              )
-              )
+                flex: 2,
+                child: Column(
+                  children: [
+                    if (result != null) AadharDetails(result!.code),
+                  ],
+                ))
           ],
         ),
       ),

@@ -1,4 +1,4 @@
-import 'package:collabact/Screens/Products/confirm_order.dart';
+import 'package:lets_do_somethings/Screens/Products/confirm_order.dart';
 import 'package:flutter/material.dart';
 
 class OrdersAllDetails extends StatefulWidget {

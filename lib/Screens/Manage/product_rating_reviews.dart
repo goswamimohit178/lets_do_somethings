@@ -1,5 +1,5 @@
-import 'package:collabact/Screens/Manage/monthly.dart';
-import 'package:collabact/Screens/Manage/quarterly_rating.dart';
+import 'package:lets_do_somethings/Screens/Manage/monthly.dart';
+import 'package:lets_do_somethings/Screens/Manage/quarterly_rating.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -30,15 +30,16 @@ class _ProductsRatingReviewState extends State<ProductsRatingReview>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Color(0xffffffff) ,
-      appBar: AppBar( backgroundColor: Color(0xff058DD1),
+      backgroundColor: Color(0xffffffff),
+      appBar: AppBar(
+        backgroundColor: Color(0xff058DD1),
         elevation: 0,
         centerTitle: true,
         systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor:  Color(0xff058DD1),
+          statusBarColor: Color(0xff058DD1),
           statusBarIconBrightness: Brightness.light,
         ),
-        title:Text(
+        title: Text(
           "Product Rating & Reviews",
           style: TextStyle(
             fontSize: 18,

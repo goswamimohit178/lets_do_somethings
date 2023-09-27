@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:collabact/Screens/Phonenumber/phone_number_view.dart';
+import 'package:lets_do_somethings/Screens/Phonenumber/phone_number_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -44,19 +44,19 @@ class _OnBoardingViewState extends State<OnBoardingView> {
     {
       'title': 'India’s Highest Commission Earning Platform',
       'content':
-          'CollabAct is an online platform that gives you an opportunity to start your own business. We do this by connecting sales partners with businesses.',
+          'lets_do_somethings is an online platform that gives you an opportunity to start your own business. We do this by connecting sales partners with businesses.',
       'image': 'assets/images/Frame.svg'
     },
     {
       'title': 'Start your own business.',
       'content':
-          'CollabAct can help you start your own business without any investment by giving you access to a wide range of products and services to sell. You can also choose to work with businesses that are a good fit for your skills and interests.',
+          'lets_do_somethings can help you start your own business without any investment by giving you access to a wide range of products and services to sell. You can also choose to work with businesses that are a good fit for your skills and interests.',
       'image': 'assets/images/Frame_1.svg'
     },
     {
       'title': 'Register and Earn unlimited.',
       'content':
-          'Create a free account and start earning commissions by selling products and services from a wide range of businesses. There is no limit to the amount of money that can be earned.It takes time and effort to build a successful business on CollabAct. ',
+          'Create a free account and start earning commissions by selling products and services from a wide range of businesses. There is no limit to the amount of money that can be earned.It takes time and effort to build a successful business on lets_do_somethings. ',
       'image': 'assets/images/Frame_2.svg'
     }
   ];

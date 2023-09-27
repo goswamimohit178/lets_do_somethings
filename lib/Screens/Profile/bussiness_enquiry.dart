@@ -1,8 +1,8 @@
-import 'package:collabact/Screens/Profile/My%20Leads/my_leads_add_remark.dart';
-import 'package:collabact/Screens/Profile/business_chat_view.dart';
+import 'package:lets_do_somethings/Screens/Profile/My%20Leads/my_leads_add_remark.dart';
+import 'package:lets_do_somethings/Screens/Profile/business_chat_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:collabact/models/myleads/mylead_all_model.dart';
+import 'package:lets_do_somethings/models/myleads/mylead_all_model.dart';
 
 class BussinessEnquiry extends StatefulWidget {
   const BussinessEnquiry({Key? key}) : super(key: key);
@@ -26,7 +26,7 @@ class _BussinessEnquiryState extends State<BussinessEnquiry> {
 
     ListItem(
         title: 'Eleanor Pena',
-        subtitle: 'Collabact Lead',
+        subtitle: 'lets_do_somethings Lead',
         imagePath: 'assets/images/Ellipse 19.png',
         onlineStatus: 'Engaged'),
     ListItem(
@@ -41,12 +41,12 @@ class _BussinessEnquiryState extends State<BussinessEnquiry> {
         onlineStatus: 'Engaged'),
     ListItem(
         title: 'Rahul Sharma',
-        subtitle: 'collabact Lead',
+        subtitle: 'lets_do_somethings Lead',
         imagePath: 'assets/images/Ellipse 22.png',
         onlineStatus: 'Qualified'),
     ListItem(
         title: 'Rahul Sharma',
-        subtitle: 'collabact Lead',
+        subtitle: 'lets_do_somethings Lead',
         imagePath: 'assets/images/Ellipse 22.png',
         onlineStatus: 'UnQualified'),
     ListItem(
@@ -62,7 +62,7 @@ class _BussinessEnquiryState extends State<BussinessEnquiry> {
 
     ListItem(
         title: 'Eleanor Pena',
-        subtitle: 'Collabact Lead',
+        subtitle: 'lets_do_somethings Lead',
         imagePath: 'assets/images/Ellipse 19.png',
         onlineStatus: 'Engaged'),
     ListItem(
@@ -77,12 +77,12 @@ class _BussinessEnquiryState extends State<BussinessEnquiry> {
         onlineStatus: 'Engaged'),
     ListItem(
         title: 'Rahul Sharma',
-        subtitle: 'collabact Lead',
+        subtitle: 'lets_do_somethings Lead',
         imagePath: 'assets/images/Ellipse 22.png',
         onlineStatus: 'Qualified'),
     ListItem(
         title: 'Rahul Sharma',
-        subtitle: 'collabact Lead',
+        subtitle: 'lets_do_somethings Lead',
         imagePath: 'assets/images/Ellipse 22.png',
         onlineStatus: 'UnQualified'),
 

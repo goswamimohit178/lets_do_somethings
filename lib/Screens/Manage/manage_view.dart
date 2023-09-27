@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:collabact/Screens/Manage/Create%20Campaign/my_campaign.dart';
-import 'package:collabact/Screens/Manage/My_Promotions/my_promotion.dart';
-import 'package:collabact/Screens/Manage/my_qr_code_view.dart';
-import 'package:collabact/Screens/Manage/product_rating_reviews.dart';
+import 'package:lets_do_somethings/Screens/Manage/Create%20Campaign/my_campaign.dart';
+import 'package:lets_do_somethings/Screens/Manage/My_Promotions/my_promotion.dart';
+import 'package:lets_do_somethings/Screens/Manage/my_qr_code_view.dart';
+import 'package:lets_do_somethings/Screens/Manage/product_rating_reviews.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -53,24 +53,25 @@ class _ManageViewState extends State<ManageView> {
 
   @override
   void dispose() {
-     internetconnection!.cancel();
+    internetconnection!.cancel();
     //cancel internent connection subscription after you are done
     super.dispose();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Color(0xffffffff) ,
-      appBar: AppBar( backgroundColor: Color(0xff058DD1),
+      backgroundColor: Color(0xffffffff),
+      appBar: AppBar(
+        backgroundColor: Color(0xff058DD1),
         elevation: 0,
         automaticallyImplyLeading: false,
         centerTitle: true,
         systemOverlayStyle: SystemUiOverlayStyle(
-          statusBarColor:  Color(0xff058DD1),
+          statusBarColor: Color(0xff058DD1),
           statusBarIconBrightness: Brightness.light,
         ),
-        title:Text(
+        title: Text(
           "Manage",
           style: TextStyle(
             fontSize: 18,
@@ -86,10 +87,9 @@ class _ManageViewState extends State<ManageView> {
           child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
             Container(
               color: Color(0xff058DD1),
-                      child:
-                          errmsg("No Internet Connection Available", isoffline),
-                      //to show internet connection message on isoffline = true.
-                    ),
+              child: errmsg("No Internet Connection Available", isoffline),
+              //to show internet connection message on isoffline = true.
+            ),
             SizedBox(
               height: 20,
             ),
@@ -220,7 +220,8 @@ class _ManageViewState extends State<ManageView> {
       ),
     );
   }
-  //* Internet Error Message 
+
+  //* Internet Error Message
   Widget errmsg(String text, bool show) {
     //error message widget.
     if (show == true) {
